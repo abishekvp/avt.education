@@ -138,3 +138,16 @@
   new WOW().init();
 
 })(jQuery);
+
+
+
+function navbartoggle(){
+  if (document.getElementById("navbartogglebar").style.display === "none"){
+    document.getElementById("navbartogglebar").style.display = "block";
+    document.getElementById("navbartogglex").style.display = "none";
+  }else{
+    document.getElementById("navbartogglebar").style.display = "none";
+    document.getElementById("navbartogglex").style.display = "block";
+  }
+  
+}

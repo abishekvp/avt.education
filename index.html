@@ -7,6 +7,7 @@
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- css -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700,800" rel="stylesheet" media="screen">
+  <script src="https://kit.fontawesome.com/9554f86f13.js" crossorigin="anonymous"></script>
 
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link href="css/style.css" rel="stylesheet" media="screen">
@@ -20,11 +21,9 @@
   <nav class="navbar navbar-default" role="navigation">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          <span class="sr-only">Toggle nav</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse" onclick="navbartoggle()">
+          <i id="navbartogglebar" class="fa-solid fa-bars"></i>
+          <i id="navbartogglex" style="display: none;" class="fa-solid fa-x"></i>
         </button>
 
         <!-- Logo text or image -->
@@ -36,8 +35,8 @@
           <li class="current"><a href="#intro">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Classes</a></li>
+          <li><a href="#subjects">Subjects</a></li>
           <li><a href="#parallax2">Ventures</a></li>
-          <li><a href="#portfolio">Subjects</a></li>
           <li><a href="#team">Faculties</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -222,7 +221,7 @@
   </section>
 
   <!-- Works -->
-  <section id="portfolio" class="home-section bg-gray">
+  <section id="subjects" class="home-section bg-gray">
     <div class="container">
       <div class="row">
         <div class="col-md-offset-2 col-md-8">
@@ -424,7 +423,7 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="home-section bg-gray">
+  <section id="locate" class="home-section bg-gray">
     <div class="container">
       <div class="row">
         <div class="col-md-offset-2 col-md-8">
@@ -492,7 +491,7 @@
   </section>
 
   <!-- Bottom widget -->
-  <section id="bottom-widget" class="home-section bg-white">
+  <section id="contact" class="home-section bg-white">
     <div class="container">
       <div class="row">
         <div class="col-md-offset-2 col-md-8">
@@ -504,7 +503,7 @@
       <div class="row">
         <div class="col-md-4">
           <div class="contact-widget wow bounceInLeft">
-            <i class="fa fa-map-marker fa-4x"></i>
+            <a href="#locate"><i class="fa fa-map-marker fa-4x"></i></a>
             <h5>Tuition Center</h5>
             <p>
               4th Street, Devi Nagar,<br>Thiruverkadu, Chennai - 600077
