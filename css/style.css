@@ -22,6 +22,7 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	line-height: 1.6em;
+	overflow-x: hidden;
 }
 
 h1 {
@@ -804,9 +805,40 @@ footer a:hover {
 /* ================================
 more media queries
 ================================= */
+#iframelap{
+	display: block;
+}
+#iframemob{
+	display: none;
+}
+
+#venturelap{
+	display: block;
+}
+#venturemob{
+	display: none;
+}
 
 @media (max-width:768px) {
-
+	#iframelap{
+		display: none;
+	}
+	#iframemob{
+		display: block;
+	}
+	#venturelap{
+		display: none;
+	}
+	#venturemob{
+		display: block;
+	}
+	#clientimgsplit{
+		display: none;
+	}
+	.clients li a img{
+		width: 90%;
+		margin-left: -10%;
+	}
 	header{
 		padding-bottom: 50px;
 		min-height: 1000px;
@@ -835,7 +867,24 @@ more media queries
 }
 
 @media (max-width:992px) {
-
+	#iframelap{
+		display: none;
+	}
+	#iframemob{
+		display: block;
+	}
+	#venturelap{
+		display: none;
+	}
+	#venturemob{
+		display: block;
+	}
+	#clientimgsplit{
+		display: none;
+	}
+	.clients li a img{
+		width: 100%;
+	}
 	.service.carousel .item h4, .service.carousel .item p{
 		text-align: center;
 	}
@@ -854,7 +903,24 @@ more media queries
 }
 
 @media (max-width:480px){
-
+	#iframelap{
+		display: none;
+	}
+	#iframemob{
+		display: block;
+	}
+	#venturelap{
+		display: none;
+	}
+	#venturemob{
+		display: block;
+	}
+	#clientimgsplit{
+		display: none;
+	}
+	.clients li a img{
+		width: 100%;
+	}
 	header .carousel-iphone, .detail .screenshot{
 		width: 280px;
 	}
